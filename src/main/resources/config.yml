@@ -1,0 +1,35 @@
+# CustomAbilities config. Run /abilities reload after editing.
+
+# Cooldowns in seconds.
+cooldowns:
+  web-launcher: 5
+  energy-cookie: 5
+  switcher-ball: 6
+  landmine: 3
+  evade: 4
+
+# Show the vanilla white "cooldown sweep" on the item in the hotbar.
+# Heads up: vanilla cooldowns apply to the whole item type, so while it's
+# active, normal cobwebs/cookies/snowballs/feathers are on cooldown too.
+show-cooldown-overlay: true
+
+web-launcher:
+  projectile-speed: 1.5
+  # How many seconds a web cage lasts before disappearing. 0 = stays until broken.
+  cage-duration-seconds: 5
+
+energy-cookie:
+  strength-level: 2
+  duration-seconds: 5
+
+evade:
+  # How far away (in blocks) a player can be to evade behind them.
+  search-radius: 10
+  # How far behind the target you land.
+  distance-behind: 1.2
+
+landmine:
+  hole-size: 6
+  hole-depth: 1
+  # Damage dealt to mobs/players near the blast. 0 = no damage, just the hole.
+  damage: 0

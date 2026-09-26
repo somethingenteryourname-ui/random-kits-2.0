@@ -1,0 +1,17 @@
+name: CustomAbilities
+version: '${project.version}'
+main: com.customabilities.CustomAbilities
+api-version: '1.21'
+description: Web Launcher, Energy Cookie, Switcher Ball, Landmine and Evade ability items.
+
+commands:
+  abilities:
+    description: Give custom ability items or reload the config.
+    usage: /abilities give <player> <item|all> [amount] | /abilities reload
+    aliases: [ab]
+    permission: customabilities.admin
+
+permissions:
+  customabilities.admin:
+    description: Use /abilities give and /abilities reload.
+    default: op
